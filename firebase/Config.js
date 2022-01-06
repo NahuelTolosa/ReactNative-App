@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import {getAuth} from 'firebase/auth';
+export const URL_API = 'https://react-native-app-d42bc-default-rtdb.firebaseio.com/';
 
 const firebaseConfig = {
     apiKey: "AIzaSyAnbjnerH4Cu3aHNua2zSMKzzn_hqx3tZQ",

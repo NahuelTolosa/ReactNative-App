@@ -5,6 +5,7 @@ import { MainNavigator } from './navigation/MainNavigator';
 
 export default function App() {
 
+  
   store.dispatch(getCategories);
 
   return (

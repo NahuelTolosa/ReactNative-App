@@ -39,7 +39,7 @@ export const MainNavigator = () => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
                 const uid = user.uid;
-                setUser(user)
+                setUser(user);
             } else {
                 setUser(null);                
             }

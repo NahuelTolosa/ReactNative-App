@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TextInput, StyleSheet, View, TouchableOpacity, Text } from 'react-native';
 import { signInWithEmailAndPassword, getAuth } from 'firebase/auth';
-import { auth } from '../firebase/config';
+import { auth } from '../firebase/Config';
 
 export const LogIn = () => {
 
@@ -10,7 +10,7 @@ export const LogIn = () => {
 
     const handleLogin = () => {
 
-        const auth = getAuth();
+        // const auth = getAuth();
         signInWithEmailAndPassword(auth, form.email, form.password)
             .then((userCredential) => {
                 const user = userCredential.user;
